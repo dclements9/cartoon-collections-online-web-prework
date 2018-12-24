@@ -1,9 +1,15 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+require 'pry'
+
+def roll_call_dwarves(dwarf_array)
+  dwarf_array.each_with_index{|dwarf,index| puts "#{index + 1} #{dwarf}"}
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(calls_array)
+  calls_array.collect do |call|
+    call.first.upcase!
+    call.insert(-1,"!")
+  end
+#    binding.pry
 end
 
 def long_planeteer_calls# code an argument here
