@@ -6,7 +6,7 @@ end
 
 def summon_captain_planet(calls_array)
   calls_array.collect do |call|
-    call.first.upcase!
+    call.upcase!
     call.insert(-1,"!")
   end
 #    binding.pry
